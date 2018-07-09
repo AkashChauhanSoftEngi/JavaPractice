@@ -17,6 +17,7 @@ public class ImmutableAndMutableClasses {
 		System.out.println(first);
 		
 		/*StringBuffer & StringBuilder are Mutable classes*/
+		/*StringBuilder is faster but StringBuffer is thread safe*/
 		StringBuffer second = new StringBuffer("two");
 		two(second);
 		System.out.println(second);
