@@ -7,6 +7,8 @@ package com.project.java;
 /*
  * Throwable-> Error{Always Unchecked} & Exceptions{''Checked'' + Runtime Exceptions{Always Unchecked}}
  * Runtime exception and Errors are Unchecked Exceptions, rest you need to handle or have to use throws keyword
+ * Unchecked are the exceptions that are not checked at compiled time.
+ * 
  * */
 import java.io.*;
 
