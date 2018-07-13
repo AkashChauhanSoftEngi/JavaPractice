@@ -3,6 +3,9 @@ package com.project.java;
 /*
  * In Java you can only override instance methods and not instance variables.
  * can utilize getter methods for such purpose
+ * 
+ * Only static methods can be shadow but not the normal method
+ * Reference: https://www.geeksforgeeks.org/g-fact-63/
  * */
 
 public class OverridingAndShadowing {
@@ -15,10 +18,12 @@ public class OverridingAndShadowing {
 		//This is shadowing not inheritance
 		A a = new B();
 		System.out.println(a.getValue());
+		System.out.println(a.getvalueStatic());
         System.out.println(a.i);
         
         B b = new B();
 		System.out.println(b.getValue());
+		System.out.println(b.getvalueStatic());
         System.out.println(b.i);
 	}
 }
@@ -27,6 +32,10 @@ class A {
     int i = 10;
     
     public String getValue(){
+    	return "A";
+    }
+    
+    public static String getvalueStatic(){
     	return "A";
     }
 }
@@ -40,6 +49,10 @@ class B extends A {
     /* This is Overriding
      * */
     public String getValue(){
+    	return "B";
+    }
+    
+    public static String getvalueStatic(){
     	return "B";
     }
 }
