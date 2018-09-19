@@ -20,3 +20,11 @@ public class UnsignedRightShiftOperator {
 		System.out.println(vInt>>>3);
 	}
 }
+/*
+ * To preserve the sign of the number, during an arithmetic right shift, instead of filling the left-most vacant positions with 0s, the sign bit (leftmost bit) of the number is used to fill these positions. This is a kind of sign extension.
+   For example,
+   0010 1100 0101 1011 arithmetic right shift by 2 postions gives 0000 1011 0001 0110.
+   1010 1100 0101 1011 arithmetic right shift by two positions gives 1110 1011 0001 0110. The result of the shifting is thus still a negative number (sign bit 1).
+ * 
+ * Reference: https://www.quora.com/Why-is-there-no-unsigned-left-shift-operator-in-Java
+ * */
