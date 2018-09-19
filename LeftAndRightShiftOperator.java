@@ -10,8 +10,8 @@ package com.project.java;
 public class LeftAndRightShiftOperator {
 
 	public static void main(String[] args) {
-		byte i = 127;
-		i=(byte) (i << 2);
+		int i = 127;
+		i=(i << 2);
 		System.out.println(i); 
 	}
 }
