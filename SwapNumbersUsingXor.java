@@ -1,7 +1,9 @@
 package com.project.java;
 
 /*
- * If you XOR a number with itself it becomes 0 
+ * If you XOR a number with itself it becomes 0
+ * 1- (1->0, 0->1)
+ * 2- (i ^ i: 0)
  * */
 
 public class SwapNumbersUsingXor {
