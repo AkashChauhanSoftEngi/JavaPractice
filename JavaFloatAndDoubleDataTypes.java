@@ -20,10 +20,18 @@ public class JavaFloatAndDoubleDataTypes {
 		float a = 0.123456789f;
 		double b = 0.123456789123456789;
 		double c = 3D;
-
 		System.out.println("Float: " + a + "\nDouble: " + b);
 		System.out.println("C: " + c);
 		System.out.println("D: " + d);
 		System.out.println("E: " + e);
+		
+		float k = 1.2f;
+		float l = 1.0f;
+		System.out.println("k-l: " + (k-l));
+		
+		double m = 1.2;
+		double n = 1.0;
+		System.out.println("m-n: " + (m-n));
+
 	}
 }
