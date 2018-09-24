@@ -13,8 +13,8 @@ package com.project.java;
  * Double: Scale-> 17, default: 0.0F
  * */
 public class JavaFloatAndDoubleDataTypes {
-	static float d;
-	static double e;
+	static float d; //4 bytes
+	static double e; //8 bytes
 
 	public static void main(String[] args) {
 		float a = 0.123456789f;
